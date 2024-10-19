@@ -52,5 +52,4 @@ const Navbar = () => {
     </nav>
   )
 }
-gd
 export default Navbar
