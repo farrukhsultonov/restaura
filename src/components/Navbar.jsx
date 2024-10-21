@@ -16,7 +16,7 @@ const Navbar = () => {
     const targetElement = document.getElementById(targetId);
     if(targetElement) {
       const offsetTop = targetElement.offsetTop - 80;
-      window.scroll({
+      window.scrollTo({
         top: offsetTop,
         behavior: "smooth"
       })
@@ -42,11 +42,11 @@ const Navbar = () => {
       </div>
       {isMobileMenuOpen && (
         <div className="w-full backdrop-blur-lg lg:hidden">
-          {LINKS.map((link, index) => {
+          {LINKS.map((link, index) => (
             <a key={index} href={`#${link.targetId}`} className="block p-4 uppercase tracking-tighter" onClick={(e) => handleScroll(e, link.targetId)}>
               {link.text}
             </a>
-          })}
+          ))}
         </div>
       )}
     </nav>
