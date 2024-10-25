@@ -19,7 +19,7 @@ const HeroSection = () => {
         transition={{duration: 0.5}}        
         src={logo} alt="restaura" 
         className="w-full p-4" />
-        <p className="p-4 text-lg tracking-tighter text-white">Paris</p>
+        <p className="p-4 text-lg tracking-tighter text-white">Texas</p>
       </div>
       </section>
   )
